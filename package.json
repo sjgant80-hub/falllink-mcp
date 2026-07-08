@@ -1,0 +1,33 @@
+{
+  "name": "@ai-native-solutions/falllink-mcp",
+  "version": "1.0.0",
+  "description": "Model Context Protocol server (stdio) for FallLink. Exposes signaling primitives — encode/decode WebRTC offer/answer bundles, mint peer IDs, inspect defaults — so agents can broker P2P handshakes.",
+  "type": "module",
+  "main": "src/index.js",
+  "bin": {
+    "falllink-mcp": "src/index.js"
+  },
+  "files": ["src", "README.md", "LICENSE"],
+  "keywords": ["mcp", "model-context-protocol", "webrtc", "p2p", "falllink"],
+  "author": "AI-Native Solutions <sjgant80@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sjgant80-hub/falllink-mcp.git"
+  },
+  "homepage": "https://github.com/sjgant80-hub/falllink-mcp",
+  "bugs": {
+    "url": "https://github.com/sjgant80-hub/falllink-mcp/issues"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "@ai-native-solutions/falllink-sdk": "^1.0.0"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "node -e \"import('./src/index.js').then(() => console.log('ok · mcp module loads'))\""
+  }
+}
